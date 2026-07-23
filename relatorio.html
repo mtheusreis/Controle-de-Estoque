@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório Compras</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+
+    <h1 id="titulo-pagina">
+        Relatório de Compras
+    </h1>
+    <p id="title-text">Fechamento de dados da semana </p>
+
+    <div class="controle-main">
+
+        <div class="coluna-painel">
+            <h3>Painel de valores</h3>
+
+            <div class="card-indicador">
+                <p>Total Produtos</p>
+                <h1 class="main-infos" id="total-produtos">0,0</h1>
+            </div>
+            <div class="card-indicador">
+                <p>Total Caixas</p>
+                <h1 class="main-infos" id="total-caixas">0</h1>
+            </div>
+            <div class="card-indicador">
+                <p>Total Valor (Sem impostos)</p>
+                <h1 class="main-infos" id="total-valor">0,0</h1>
+            </div>
+            <div class="grupo-botoes">
+                <a><button id="btn-adicionar">
+                        <ion-icon name="cloud-download"></ion-icon>
+                        Salvar Relatório - PDF
+                    </button></a>
+                <a><button id="btn-estoque">
+                        <ion-icon name="download"></ion-icon>
+                        Receber Compras
+                    </button></a>
+                <a href="index.html"><button id="btn-relatorio">Voltar</button></a>
+            </div>
+        </div>
+
+        <div class="produtos-main">
+            <h3>Lista de Produtos</h3>
+            <div class="tabela-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Caixas</th>
+                            <th>Valor</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="relatorio-body">
+
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script type="module" src="js/relatorio.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+</body>
+
+</html>

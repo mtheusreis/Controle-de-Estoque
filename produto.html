@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciar Produto</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/produto.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+
+    <h1 id="titulo-pagina">Carregando...</h1>
+    <p>Preencha as informações do produto.</p>
+
+    <form id="edit-produto">
+
+        <div class="coluna-formulario">
+            <div class="grupo-campo">
+                <label for="nome">Nome do Produto</label>
+                <input type="text" id="nome" placeholder="Ex: Pão" required>
+            </div>
+
+            <div class="grupo-campo">
+                <label for="linha">Linha do Produto</label>
+                <select name="linha" id="linha">
+                    <option value="Tradicional">Tradicional</option>
+                    <option value="Premium">Premium</option>
+                    <option value="Extra">Extra</option>
+                    <option value="Lançamento">Lançamento</option>
+                    <option value="Salgados">Salgados</option>
+                </select>
+                <div class="linhaValor">
+                    <p>Preço da Linha: <strong id="valorLinha">0.0</strong></p>
+                </div>
+            </div>
+
+            <div class="grupo-campo">
+                <label for="consumoMedioDiario">Consumo Médio Diário (Unidades)</label>
+                <input type="number" min="0" id="consumoMedioDiario" placeholder="Ex: 5">
+            </div>
+
+            <div class="grupo-campo">
+                <label for="mediaPacote">Unidades por Pacote</label>
+                <input type="number" min="0" id="mediaPacote" placeholder="Ex: 6">
+            </div>
+
+            <div class="grupo-campo">
+                <label for="mediaCaixa">Pacotes por Caixa</label>
+                <input type="number" min="0" id="mediaCaixa" placeholder="Ex: 4">
+            </div>
+
+            <div class="grupo-campo">
+                <label for="valorPeso">Peso kg</label>
+                <input type="text" min="0" id="valorPeso" placeholder="19.8" value="19.8">
+            </div>
+        </div>
+
+        <div class="coluna-painel">
+            <div>
+                <h3>Informações</h3>
+
+                <div class="calculos-resultado">
+                    <p><strong>Consumo Total: </strong> <span id="consumo-total-8dias">0</span> un.</p>
+                    <p><strong>Capacidade caixa:</strong> <span id="total-unidades-caixa">0</span> un.</p>
+                    <p><strong>Caixas necessárias:</strong> <span id="caixas-necessarias">0</span> cx.</p>
+                    <p><strong>Caixas no Estoque:</strong> <span id="caixas-estoque">0</span> cx.</p>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="estoque">Estoque (Pacotes):</label>
+                    <div class="controle-estoque">
+                        <button type="button" class="btn-estoque" id="btn-decrementar">−</button>
+                        <input type="number" id="estoque" placeholder="Ex: 2" value="0" min="0">
+                        <button type="button" class="btn-estoque" id="btn-incrementar">+</button>
+                    </div>
+                </div>
+
+                <div class="resultado-compra">
+                    <p><strong>Comprar:</strong> <span id="caixas-a-comprar">0</span>
+                        caixas</p>
+                </div>
+            </div>
+
+            <div class="grupo-botoes">
+                <button type="submit" id="btn-salvar">
+                    <ion-icon name="archive"></ion-icon>
+                    Salvar
+                </button>
+                <button type="button" id="btn-del">
+                    <ion-icon name="trash"></ion-icon>
+                    Deletar
+                </button>
+                <a href="index.html"><button type="button">Cancelar</button></a>
+            </div>
+        </div>
+
+    </form>
+
+    <script type="module" src="js/produto.js"></script>
+</body>
+
+</html>

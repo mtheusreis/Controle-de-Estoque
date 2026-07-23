@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estoque Freezer</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+
+    <h1 id="titulo-pagina">Controle Estoque</h1>
+    <p>Te amo mãe</p>
+
+    <div class="controle-main">
+
+        <div class="coluna-painel">
+            <div>
+                <h3>Painel de Resumo</h3>
+
+                <div class="card-indicador">
+                    <p>Total da Próxima Compra</p>
+                    <h1 class="main-infos" id="total-compras">R$ 0,00</h1>
+                </div>
+
+                <div class="card-indicador">
+                    <p>Total em Estoque</p>
+                    <h1 class="main-infos" id="totalEstoque">0</h1>
+                </div>
+
+                <div class="card-indicador">
+                    <p>Total de Itens</p>
+                    <h1 class="main-infos" id="total-produtos">0</h1>
+                </div>
+            </div>
+
+            <div class="grupo-botoes">
+                <a href="produto.html"><button id="btn-adicionar">
+                        <ion-icon name="add-circle"></ion-icon>
+                        Adicionar Novo
+                    </button></a>
+                <a href="relatorio.html"><button id="btn-relatorio">
+                        <ion-icon name="clipboard"></ion-icon>
+                        Gerar Relátorio
+                    </button></a>
+            </div>
+        </div>
+
+        <div class="produtos-main">
+            <h3>Lista de Produtos</h3>
+            <div class="tabela-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Estoque</th>
+                            <th>Val. Estoque</th>
+                            <th>Val. Compra</th>
+                            <th>Comprar</th>
+                            <th>Config</th>
+                        </tr>
+                    </thead>
+                    <tbody id="produtosList">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+
+</body>
+
+</html>
