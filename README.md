@@ -59,7 +59,21 @@ Os produtos são comercializados pelo fornecedor em **caixas**, contendo uma qua
            │
            └──► Dar Baixa no Recebimento ──► Atualiza estoque e recalcula compras automaticamente
 ```
- 
+
+## Visual do Sistema
+
+### Dashboard e Visão Geral
+<img src="https://github.com/user-attachments/assets/51cd7eca-501b-433e-9a99-ccda7a323cde" alt="Dashboard do Sistema" width="100%" />
+
+### Adicionar/Editar Produtos
+<img src="https://github.com/user-attachments/assets/5b1ef7fa-b883-4344-bd28-2e736d1ab54d" alt="Editar Produtos" width="80%" />
+
+### Relatório e Pedido de Compras
+<img src="https://github.com/user-attachments/assets/82c67093-f937-4e89-8a29-6d19b75e02c7" alt="Relatório de Compras" width="100%" />
+
+### Controle Rápido de Estoque (Mobile App)
+<img src="https://github.com/user-attachments/assets/ed1c9a9d-38ee-44df-8b13-b5ab15ccd148" alt="Controle Mobile" width="350px" />
+
 
 ## Instalação e Configuração
 
