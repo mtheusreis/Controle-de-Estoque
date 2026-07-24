@@ -4,9 +4,9 @@ import { getAuth, setPersistence, browserLocalPersistence, onAuthStateChanged } 
 
 const firebaseConfig = {
     apiKey: "XXXXXXXXXXXX",
-    authDomain: "controlefreezer.firebaseapp.com",
-    projectId: "controlefreezer",
-    storageBucket: "controlefreezer.firebasestorage.app",
+    authDomain: "controleestoque.firebaseapp.com",
+    projectId: "controleestoque",
+    storageBucket: "controleestoque.firebasestorage.app",
     messagingSenderId: "XXXXXXXXXX",
     appId: "XXXXXXXXXXXXXXXXXX"
 };
