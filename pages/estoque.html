@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estoque Freezer</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/estoque.css">
+    <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+
+    <div class="container-main">
+        <h1>Estoque Freezer</h1>
+        <p>Anote o que você ultilizou</p>
+
+        <div class="salvar-mudancas">
+            <button id="salvar-btn" disabled>
+                Salvar Alterações
+            </button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Estoque</th>
+                    <th>Add/Remover</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+            </tbody>
+        </table>
+
+    </div>
+
+    <script type="module" src="js/estoque.js"></script>
+
+</body>
+
+</html>
