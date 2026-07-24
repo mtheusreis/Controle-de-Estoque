@@ -26,11 +26,17 @@ Os produtos são comercializados pelo fornecedor em **caixas**, contendo uma qua
 
 ## Arquitetura e Tecnologias
 
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black)
+![Firestore](https://img.shields.io/badge/Firestore-039BE5?style=flat-square&logo=Firebase&logoColor=white)
+
 - **Front-end:** HTML5, CSS3, JavaScript (ES6+ Modules)
 - **Backend-as-a-Service (BaaS):** Firebase (v10.12.0)
   - **Firebase Authentication:** Controle de acesso e persistência de sessão local (`browserLocalPersistence`).
   - **Cloud Firestore:** Banco de dados NoSQL em tempo real.
-- **Bibliotecas Auxiliares:**
+- **Bibliotecas:**
   - `html2pdf.js`: Conversão do relatório de compras renderizado na DOM para documento PDF.
   - `Ionicons`: Iconografia da interface.
  
